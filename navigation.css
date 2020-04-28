@@ -1,0 +1,52 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity:1;
+  background-color: rgba(255, 235, 238,0);
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: orange;
+  width: 130px;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+
+}
+
+.active {
+  background-color: #1111;
+}
+  
+
+/* visited link */
+.r:visited {
+  color: #3498DB;
+}
+
+/* mouse over link */
+.r:hover {
+  color: #D35400;
+}
+
+/* selected link */
+.r:active {
+  color: #41F1E9  ;
+}
+
+</style>

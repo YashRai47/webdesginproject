@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+	<script type="text/javascript">
+	function car();
+	{
+		var un=document.form["Forms"]["un"];
+		var pw=document.form["Forms"]["pw"];
+
+		if (un.value=="")
+		{
+			alert("Please enter User Name!!!!!!!");
+			un.focus();
+			return false;
+		}
+		else if(pw.value=="")
+		{
+			alert("Please enter your Password!!!!!!");
+			pw.focus();
+			return false;
+		}
+		else
+		{
+			document.write("UserName:"+un.value);
+			document.write("Password:"+pw.value);
+		}
+	}
+</script>
+	<div style="border:1px solid white;height: 580px;width: 1250px;background-image: url(Audi1.jpg);background-size:1254px 600px">
+		<div style="border: 0px solid blue;float:right;width: 740px;height: 29px;margin-top: 0px">
+						<a href="Main.html#About"><div class="home"  style="float:right;width: 100px;border: 1px solid red;text-align: center;height: 22px;padding-top: 4px;border-radius: 5px;border-style: outset;"><b><i>About</i></b></div></a>
+							<a href="Car1.html"><div class="home"  style="float:right;width: 100px;border: 1px solid red;;text-align: center;height: 22px;padding-top: 4px;border-radius: 5px;border-style: outset;"><b><i>Cars</i></b></div></a>
+								
+					<a href="Main.html" target="_blank"><div class="home"  style="float:right;width: 100px;border: 1px solid red;;text-align: center;height: 22px;padding-top: 4px;border-radius: 5px;border-style: outset;"><b><i>Home</i></b></div></a>
+					</div>
+	<form name="Forms"  onsubmit="return car();">
+		<div style="border:1px solid black;height: 200px;width: 250px;margin-left: 500px;margin-top: 180px;background-color: black;color: white;opacity: 0.9;padding-top: 10px;border-color: red;border-radius: 5px">
+			User Name<br><br><input type="text" style="margin-left: 10px;border-top-width: 0px;border-left-width: 0px;border-right-width: 0px;width: 200px;border-color: white;" id="un"><br><br>
+			Password<br><br><input type="Password" style="margin-left: 10px;border-top-width: 0px;border-left-width: 0px;border-right-width: 0px;width: 200px;border-color: white;" id="pw"><br><br><br>
+			<a href="Main.html" target="_blank"><div class="form" style="border:1px solid lightgreen;border-radius: 50px;width:80px;float: left;margin-left: 10px;text-align: center;color: white;" onclick="car();">Sign In</div></a>
+			<a href="Login2.html"><div class="form"  style="border:1px solid lightgreen;border-radius: 50px;width: 130px;float: left;margin-left: 10px;text-align: center;color: white">New Registration</div></a>
+		</div>
+	</form>
+	</div>
+
+</body>
+</html>
